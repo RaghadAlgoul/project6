@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="project6.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+           
+           
+             <div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar" class="elevation-4" style="background-color:#000443;box-shadow:inherit">
+                
+        
+				<div class="p-4 pt-5">
+		  		<img  class="img logo rounded-circle mb-5"  style="border:solid 4px #f8b739" src="Image\\mohammad.jpeg" />
+                    <h3 style="text-align:center;color:#F3F5F9;margin-top:-17px">HELLO Mohammad </h3>
+	        <ul class="list-unstyled components mb-5">
+	          <li  runat="server">
+	            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"><div id="e1" runat="server">Partner</div></asp:LinkButton>
+	            
+	          </li>
+	          <li  runat="server">
+	            <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click"><div id="e2" runat="server">Volunteers</div></asp:LinkButton>
+	          </li>
+	          <li>
+	            <asp:LinkButton ID="LinkButton6" runat="server" OnClick="LinkButton6_Click"><div id="Div4" runat="server">Donations</div></asp:LinkButton>
+             
+	          </li>
+	          <li>
+	            <asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click"><div id="Div1" runat="server">Campigns</div></asp:LinkButton>
+	          </li>
+	          <li>
+<asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click"><div id="Div2" runat="server">User Message</div></asp:LinkButton>	          </li>
+	        <li>
+<asp:LinkButton ID="LinkButton5" runat="server" OnClick="LinkButton5_Click"><div id="Div3" runat="server">Recommendation</div></asp:LinkButton>	          </li>
+            </ul>
+
+	      </div>
+    	</nav>
+
+      <div id="content" class="p-4 p-md-5">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+           <img  style="width:60px;height:60px;display:inline-block"  src="Image\\Hope Logo copy.png" />  <%--<h3> HOPE</h3>--%>
+            </button>
+<asp:LinkButton ID="LinkButton7" runat="server" OnClick="LinkButton7_Click" Style="font-weight:bold">Log Out</asp:LinkButton>
+            <%--<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>--%>
+
+            <%--<div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>--%>
+          </div>
+        </nav>
+          
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+      </div>
+		</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+        </div>
+    </form>
+</body>
+</html>
